@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+            position: relative;
+        }
+        a:hover::after{
+            width: 100%;  
+        }
+        a::after{
+            content: '';
+            width: 0;
+            height: 4px;
+            background: #5F9EA0;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+       .sec{
+           display: inline-block;
+       }
+       #sec1{
+           width: 20%;
+           border: 1px solid black;
+           text-align: center;
+           font-size: 30px;
+           margin-right: -4px;
+           border: none;
+           /* background-color: black; */
+           color: cornflowerblue;
+       }
+       #sec2{
+           width: 78%;
+           border: 1px solid black;
+           word-spacing: 100px;
+           padding-top: 60.5px;
+           padding-bottom: 43px;
+           padding-right: 27.1px;
+           font-size: 20px;
+           text-align: end;
+           border: none;
+           /* background-color: black; */
+       }
+       h2{
+        font-size: 20px;
+        color: rgb(15, 60, 87);
+        margin-left: 40px;
+        margin-top: 60px;
+       }
+   </style>
+</head>
+<body style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+   <div>
+       <section class="sec" id="sec1">
+           <h1>DETAILS...</h1>
+       </section>
+       <section class="sec" id="sec2">
+           <div>
+               <nav id="nav">
+                   <a href="{% url 'edu' %}">EDUCATION</a>
+                   <a href="{% url 'skill' %}">SKILL</a>
+                   <a href="{% url 'pro' %}">PROJECT</a>
+                   <a href="{% url 'details' %}">DETAILS</a>
+                   <a href="{% url 'main' %}">MAIN</a>
+               </nav>
+           </div>
+       </section>
+   </div>
+   <div style="display: flex; ">
+        <section class="sec" id="sec4" style="width: 70%; word-spacing: 7px; line-height: 27px;"> <h2>NAME : K.PRAVEEN, <br><br> 
+        FATHER'S NAME : KANNAN, <br><br>
+        DOB : 06-05-2003, <br><br>
+        GRNDER : MALE, <br><br>
+        DEGREE : BCA (BACHULOR OF COMPUTER APPLICATION), <br><br>
+        STRENGTH : MY STRENGTH IS MY MIND SET , ANY SITUATION I'LL HANDLE, <br><br>
+        HOBBY : PLATING VOLLYBALL  , READING FINANCIAL RELATED BOOKS, <br><br>
+        INTEREST : PHOTOGRAPHY, <br><br>
+        E-MAIL : PRAVEEN0000030@GMAIL.COM, <br><br>
+        ADDRESS : VEDARANYAM(T.K) , NAGAPATTINAM(D.T)
+        </h2></section>
+        <section class="sec" id="sec5" style="width: 20%;"><img src="https://media.istockphoto.com/id/1087531642/vector/male-face-silhouette-or-icon-man-avatar-profile-unknown-or-anonymous-person-vector.jpg?s=612x612&w=0&k=20&c=FEppaMMfyIYV2HJ6Ty8tLmPL1GX6Tz9u9Y8SCRrkD-o=" alt="" style="height: 430px; width: 430px; margin-left: -30px;"></section>
+    </div>
+    <div>
+    <section class="sec" id="sec6" style="width: 95%; margin-left: 16px; word-spacing: 6px; line-height: 30px;">
+    <h3>Basically i am from computer student and i want start my career in software industery so that i was looking for a entry level job and i love learn new skill, ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloribus esse nihil itaque ipsam minima quae, dolorem, deserunt est aliquid aut maiores laboriosam quos? Itaque qui eum nihil sint voluptate.</h3>
+    </section>
+   </div>
+
+</body>
+</html>

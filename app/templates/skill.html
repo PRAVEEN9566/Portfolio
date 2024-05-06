@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         a{
+            text-decoration: none;
+            color: black;
+            position: relative;
+        }
+        a:hover::after{
+            width: 100%;  
+        }
+        a::after{
+            content: '';
+            width: 0;
+            height: 4px;
+            background: #5F9EA0;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+        .sec{
+            display: inline-block;
+        }
+        #sec1{
+            width: 20%;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 30px;
+            margin-right: -4px;
+            border: none;
+            /* background-color: black; */
+            color: cornflowerblue;
+        }
+        #sec2{
+            width: 78%;
+            border: 1px solid black;
+            word-spacing: 100px;
+            padding-top: 60.5px;
+            padding-bottom: 43px;
+            padding-right: 27.1px;
+            font-size: 20px;
+            text-align: end;
+            border-left: none;
+            /* background-color: black; */
+            border: none;
+        }
+        #sec3{
+            width: 50%;
+            height: 120vh;
+        }
+        #sec4{
+            width: 60%;
+            height: 120vh;
+        }
+        h2{
+            font-size: 23px;
+        }
+    </style>
+</head>
+<body style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; ">
+    <div>
+        <section class="sec" id="sec1">
+            <h1>SKILL...</h1>
+        </section>
+        <section class="sec" id="sec2">
+            <div>
+                <nav id="nav">
+                    <a href="{% url 'edu' %}">EDUCATION</a>
+                    <a href="{% url 'skill' %}">SKILL</a>
+                    <a href="{% url 'pro' %}">PROJECT</a>
+                    <a href="{% url 'details' %}">DETAILS</a>
+                    <a href="{% url 'main' %}">MAIN</a>
+                </nav>
+            </div>
+        </section>
+    </div>
+    <div style="display: flex;">
+        <section class="sec" id="sec3">
+            <img src="https://i0.wp.com/junilearning.com/wp-content/uploads/2020/06/python-programming-language.webp?fit=800%2C800&ssl=1" alt="" style="width: 450px; height:400px;">
+            <br><br><br>
+            <h1>SQL:-</h1>  
+            <ul style="margin-left: 40px;">
+                <li><h2>Good Understanding in Sql Queries</h2></li>
+                <li><h2>Experience with relational database management systems (RDBMS) such as MySQL and Oracle.</h2></li>
+                <li><h2>Good Understanding in DDL,DML and TCL</h2></li>
+                <li><h2>Knowledge of database design principles, normalization, and indexing.</h2></li>
+            </ul>
+            <hr>
+            <br><br>
+            <img src="https://media.licdn.com/dms/image/D4E12AQHfSWXTymm4VA/article-cover_image-shrink_600_2000/0/1695299723277?e=2147483647&v=beta&t=k0oOD_n5zjaGevp72SKt4vFaW7DvHtrwbdIyb2eP0GA" alt="" style="height: 400px; width: 600px; margin-top: 100px;">
+           
+            <ul style="margin-top: 190px; margin-left: 24px;"> 
+                <h1 style="margin-left: -60px; margin-bottom: 30px;">JAVASCRIPT :-</h1>    
+                <li><h2>Understand JavaScript's syntax, including variables, data types, operators, and control structures like loops and conditionals.</h2></li>
+                <li><h2>Understanding of basic JavaScript concepts like DOM manipulation, event handling</h2></li>
+                <li><h2>Understand function,parameters and return values.</h2></li>
+                <li><h2> Well understanding Error Handling in javascript</h2></li>
+            </ul>
+            <hr>
+        </section>
+        <section class="sec" id="sec4">
+            <h1>Python:-</h1>
+                <ul>
+                <li><h2> Strong understanding of OOP's principles and their implementation in Python</h2></li>
+                <li><h2>Basic Knowledge of Exception and Exception Handling</h2></li>
+                <li><h2>Variable,their Scope and Datatypes</h2></li>
+                <li><h2>Strong problem-solving skills and ability to think analytically to tackle complex technical challenges.</h2></li> 
+                </ul>
+                <hr>
+                <img src="https://www.ibm.com/content/dam/adobe-cms/instana/media_logo/Azure-SQL-Database-Monitoring.component.complex-narrative-xl.ts=1688044945966.png/content/adobe-cms/us/en/products/instana/supported-technologies/azure-sql-database-monitoring/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/complex_narrative/logoimage" alt="" style="margin-top: 50px; margin-left: 100px;">
+                <br><br><br><br>
+                <h1>HTML:-</h1>
+                <ul>
+                    <li><h2>Proficient in writing semantic HTML markup for structuring web pages</h2></li>
+                    <li><h2>Experience with HTML5 features such as semantic elements <br>(header, nav, main, footer) forms, and multimedia.</h2></li>
+                    <li><h2>Creating forms for user input, such as contact forms or signup forms.</h2></li>
+                    <li><h2>Ensuring your website is accessible to all users, including those with disabilities, by using proper semantic markup and ARIA attributes</h2></li>
+                </ul>
+                <h1>CSS:-</h1>
+                <ul>
+                    <li><h2>Understanding different layout techniques like flexbox, grid, and positioning to create responsive and visually appealing designs</h2></li>
+                    <li><h2>Adding animations and transitions to enhance user experience and engagement.
+                    </h2></li>
+                    <li><h2>Experience with popular CSS frameworks like Bootstrap or Foundation for building responsive and mobile-first websites quickly.</h2></li>
+                </ul> 
+                <br>
+                <hr>
+                <img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Symbol.png" alt="" style="width: 600px; height: 350px; margin-left: 140px; margin-top: 80px;">
+        </section>
+    </div>
+</body>
+</html>

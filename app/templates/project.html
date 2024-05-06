@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         a{
+            text-decoration: none;
+            color: black;
+            position: relative;
+        }
+        a:hover::after{
+            width: 100%;  
+        }
+        a::after{
+            content: '';
+            width: 0;
+            height: 4px;
+            background:#5F9EA0;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+        .sec{
+            display: inline-block;
+        }
+        #sec1{
+            width: 20%;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 30px;
+            margin-right: -4px;
+            border: none;
+            color: cornflowerblue;
+        }
+        #sec2{
+            width: 78%;
+            border: 1px solid black;
+            word-spacing: 100px;
+            padding-top: 60.5px;
+            padding-bottom: 43px;
+            padding-right: 27.1px;
+            font-size: 20px;
+            text-align: end;
+            border: none;
+        }
+    </style>
+</head>
+<body style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: rgba(182, 181, 181, 0.603);">
+    <div>
+        <section class="sec" id="sec1">
+            <h1>PROJECT...</h1>
+        </section>
+        <section class="sec" id="sec2">
+            <div>
+                <nav id="nav">
+                    <a href="{% url 'edu' %}">EDUCATION</a>
+                    <a href="{% url 'skill' %}">SKILL</a>
+                    <a href="{% url 'pro' %}">PROJECT</a>
+                    <a href="{% url 'details' %}">DETAILS</a>
+                    <a href="{% url 'main' %}">MAIN</a>
+                </nav>
+            </div>
+        </section>
+    </div>
+    <div style="display: flex;">
+        <section class="sec" style="width: 20%; margin-top: 100px; margin-left: 100px;">
+            <img src="https://icons.veryicon.com/png/o/miscellaneous/jd-app-icon/shopping-cart-296.png" alt="" style="height: 90px; width: 90px;">
+        </section>
+        <section class="sec" style="width: 50%; margin-top: 80px; margin-left: -120px;">
+            <h2>SHOPING-CART PROJECT|FEB 2024 - MAR 2024</h2>
+            <h3 style="color: gray;">I created  where it contains user login,registration,admin login,admin access for a shop using python and to store data,sqlite3 module is used.</h3>
+            <h1> sravanadurga.qsp@gmail.com</h1>
+        </section>
+    
+    </div>
+</body>
+</html>

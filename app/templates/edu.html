@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+            position: relative;
+        }
+        a:hover::after{
+            width: 100%;  
+        }
+        a::after{
+            content: '';
+            width: 0;
+            height: 4px;
+            background: #5F9EA0;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+        .sec{
+            display: inline-block;
+        }
+        #sec1{
+            width: 20%;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 30px;
+            margin-right: -4px;
+            border: none;
+            /* background-color: black; */
+            color: cornflowerblue;
+        }
+        #sec2{
+            width: 78%;
+            border: 1px solid black;
+            word-spacing: 100px;
+            padding-top: 60.5px;
+            padding-bottom: 43px;
+            padding-right: 27.1px;
+            font-size: 20px;
+            text-align: end;
+            border: none;
+            /* background-color: black; */
+            margin-bottom: -900px;
+        }
+        #sec3{
+            width: 40%;
+            height: 90vh; 
+
+        }
+        #sec4{
+            width: 50%;
+            height: 110vh;
+
+        }
+
+    </style>
+</head>
+<body style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    <div>
+        <section class="sec" id="sec1">
+            <h1>STUDIES...</h1>
+        </section>
+        <section class="sec" id="sec2">
+            <div>
+                <nav id="nav">
+                    <a href="{% url 'edu' %}">EDUCATION</a>
+                    <a href="{% url 'skill' %}">SKILL</a>
+                    <a href="{% url 'pro' %}">PROJECT</a>
+                    <a href="{% url 'details' %}">DETAILS</a>
+                    <a href="{% url 'main' %}">MAIN</a>
+                </nav>
+            </div>
+        </section>
+    </div>
+    <div style="display: flex;">
+        <section class="sec" id="sec3">
+            <h1 style="margin-top: 180px; margin-left: 40px;">PONNAYA RAMAJEYAM INSTITUE SCIENCE AND TECHNOLOGY</h1>
+            <h4 style="margin-left: 40px; color: gray; margin-top: -10px;">BACHELOR OF COMPUTER APPLICATION <br> CGPA-10</h4>
+            <img src="https://schools.olympiadsuccess.com/assets/images/school_images/school.jpg" alt="" style="width: 600px; height: 300px; margin-top: 180px;">
+        </section>
+        <section class="sec" id="sec4">
+            <img src="https://storage.googleapis.com/ezap-prod/colleges/998/ponnaiyah-ramajayam-institute-of-science-and-technology-university-thanjavur-prist-university-thanjavur-featured-image.jpg" alt="" style="height: 400px; width: 600px; margin-top: 20px; margin-left: 240px;">
+            <hr style="width: 110%; margin-right:-140px; margin-top: 30px;">
+            <h1 style="margin-top:100px ; margin-left: 140px;">R.NADESANAR GOVERMENT HIGER SECONDARY SCHOOL</h1>
+            <h3 style="margin-left:140px ; color: gray;">SSLC</h3>
+            <h4 style="margin-top: -10px; margin-left:140px; color: gray;">PERCENTAGE-70%</h4>
+            <h3 style="margin-left:140px; color: gray;">HSC</h3>
+            <h4 style="margin-top: -10px; margin-left:140px; color: gray;">PERCENTAGE-78%</h4>
+        </section>
+    </div>
+    
+</body>
+</html>
